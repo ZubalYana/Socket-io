@@ -9,6 +9,16 @@ body {
   overflow: hidden;
 }
 
+::-moz-selection {
+  background-color: #52528C;
+  color: #fff;
+}
+
+::selection {
+  background-color: #52528C;
+  color: #fff;
+}
+
 .wrap {
   width: 100%;
   height: 100vh;
@@ -100,6 +110,28 @@ body {
   100% {
     display: none;
   }
+}
+.wrap .greeting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .greeting .textCon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.wrap .greeting .textCon h1 {
+  color: #52528C;
+  font-size: 76px;
+  font-weight: 900;
+}
+.wrap .greeting .textCon p {
+  color: #372554;
+  font-size: 20px;
+  font-weight: 300;
+  width: 848px;
 }
 .wrap .content .fill {
   width: 430px;
