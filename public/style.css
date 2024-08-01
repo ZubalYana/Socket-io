@@ -30,17 +30,18 @@
 }
 .wrap .loading .circle .wave {
   position: absolute;
-  bottom: 0;
-  width: 800px;
+  width: 1200px;
 }
 .wrap .loading .circle .wave1 {
   animation: wave1 5s infinite linear;
   top: 320px;
+  z-index: 2;
 }
 .wrap .loading .circle .wave2 {
   animation: wave2 10s infinite linear;
-  left: -600px;
-  top: 320px;
+  left: -700px;
+  top: 200px;
+  z-index: 1;
 }
 @keyframes wave1 {
   0% {
@@ -48,6 +49,7 @@
   }
   100% {
     transform: translateX(-80%);
+    top: -100px;
   }
 }
 @keyframes wave2 {
@@ -56,6 +58,7 @@
   }
   100% {
     transform: translateX(80%);
+    top: -200px;
   }
 }
 .wrap .content .fill {
