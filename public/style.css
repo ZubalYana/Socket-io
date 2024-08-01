@@ -137,6 +137,15 @@ body {
 .wrap .greeting .authCon {
   width: 1000px;
   height: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap .greeting .authCon .cart {
+  width: 350px;
+  height: 400px;
+  border-radius: 16px;
+  border: #372554 2px solid;
 }
 .wrap .content .fill {
   width: 430px;
