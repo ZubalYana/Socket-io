@@ -10,6 +10,17 @@
   height: 100vh;
   padding: 40px;
 }
+.wrap .screen {
+  width: 100%;
+  height: 100%;
+}
+.wrap .loading {
+  position: absolute;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .wrap .fill {
   width: 430px;
   display: flex;
