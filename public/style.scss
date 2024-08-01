@@ -23,6 +23,8 @@ body{
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        animation: loadingClose 1s 1 linear forwards;
+        animation-delay: 5s;
 
         .circle {
             position: relative;
@@ -76,6 +78,12 @@ body{
             100%{
                 width: 100%;
             }
+        }
+    }
+    @keyframes loadingClose{
+        0% { display: flex; }
+        100%{
+            display: none;
         }
     }
     .content{
