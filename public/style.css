@@ -21,12 +21,12 @@
   justify-content: center;
   align-items: center;
 }
-.wrap .fill {
+.wrap .content .fill {
   width: 430px;
   display: flex;
   justify-content: space-between;
 }
-.wrap .fill #message {
+.wrap .content .fill #message {
   width: 250px;
   height: 60px;
   border-radius: 16px;
@@ -35,7 +35,7 @@
   font-size: 18px;
   font-weight: 400;
 }
-.wrap .fill #send {
+.wrap .content .fill #send {
   width: 150px;
   height: 60px;
   border-radius: 16px;
@@ -49,20 +49,20 @@
   transition: 0.5s ease;
   cursor: pointer;
 }
-.wrap .fill #send:hover {
+.wrap .content .fill #send:hover {
   background-color: #fff;
   color: #333;
 }
-.wrap .usersOnline {
+.wrap .content .usersOnline {
   margin-bottom: 15px;
   font-size: 20px;
   color: #333;
   font-weight: 400;
 }
-.wrap .usersOnline span {
+.wrap .content .usersOnline span {
   font-weight: 700;
 }
-.wrap .messageContainer {
+.wrap .content .messageContainer {
   margin-bottom: 50px;
   width: 100%;
   height: 400px;
@@ -72,7 +72,7 @@
   display: flex;
   flex-direction: column;
 }
-.wrap .messageContainer .message {
+.wrap .content .messageContainer .message {
   padding: 12px;
   background-color: #333;
   color: #fff;
