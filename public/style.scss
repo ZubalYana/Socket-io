@@ -28,26 +28,26 @@
             .wave{
                 position: absolute;
                 bottom: 0;
-                width: 200%;
-                height: 100px;
-                opacity: 0.5;
+                width: 800px;
             }
             .wave1{
                 animation: wave1 5s infinite linear;
+                top: 320px;
             }
             .wave2{
                 animation: wave2 10s infinite linear;
-                opacity: 0.6;
+                left: -600px;
+                top: 320px;
             }
         }
         @keyframes wave1{
             0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            100% { transform: translateX(-80%); }
         }
         
         @keyframes wave2{
-            0% { transform: translateX(50%); }
-            100% { transform: translateX(0); }
+            0% { transform: translateX(0); }
+            100% { transform: translateX(80%); }
         }
     }
     .content{
