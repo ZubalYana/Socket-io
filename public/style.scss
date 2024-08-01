@@ -40,7 +40,15 @@
                 opacity: 0.6;
             }
         }
-
+        @keyframes wave1{
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        @keyframes wave2{
+            0% { transform: translateX(50%); }
+            100% { transform: translateX(0); }
+        }
     }
     .content{
         .fill{
