@@ -12,3 +12,8 @@ socket.on('chat message', (data)=>{
         `
     )
 })
+
+socket.on('users', (count)=>{
+    console.log(count)
+    $('.usersOnline').html(`Users online: <span>${count}</span> `)
+})

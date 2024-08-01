@@ -8,10 +8,17 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.get('/', (req,res)=>{
     res.sendFile(__dirname, 'public', 'index.html')
 })
+let usersCount = 0;
 io.on('connection', (socket)=>{
     console.log('New user connected')
+    usersCount++
+    io.emit('users', usersCount)
     socket.on('chat message', (msg)=>{
         io.emit( 'chat message', msg);
+    })
+    socket.on('disconnect', ()=>{
+        usersCount--
+        io.emit('users', usersCount)
     })
 })
 
