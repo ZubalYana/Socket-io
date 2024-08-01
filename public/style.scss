@@ -18,6 +18,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
         .circle {
             position: relative;
             width: 360px;
@@ -27,12 +28,12 @@
             overflow: hidden;
             .wave{
                 position: absolute;
-                width: 1200px;
+                width: 1000px;
             }
             .wave1{
                 animation: wave1 5s infinite linear;
                 top: 320px;
-                z-index: 2;
+                z-index: 2;                
             }
             .wave2{
                 animation: wave2 10s infinite linear;

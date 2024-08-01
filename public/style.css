@@ -20,6 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .wrap .loading .circle {
   position: relative;
@@ -30,7 +31,7 @@
 }
 .wrap .loading .circle .wave {
   position: absolute;
-  width: 1200px;
+  width: 1000px;
 }
 .wrap .loading .circle .wave1 {
   animation: wave1 5s infinite linear;
