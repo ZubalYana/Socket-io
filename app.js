@@ -8,6 +8,9 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.get('/', (req,res)=>{
     res.sendFile(__dirname, 'public', 'index.html')
 })
+app.get('/auth', (req,res)=>{
+    res.sendFile(path.join(__dirname, 'public', 'auth', 'auth.html'))
+})
 let usersCount = 0;
 io.on('connection', (socket)=>{
     console.log('New user connected')
