@@ -39,6 +39,8 @@ body {
   background-color: #52528C;
   padding: 20px;
   color: #fff;
+  display: none;
+  flex-direction: column;
 }
 .wrap .logIn h3 {
   font-size: 40px;
