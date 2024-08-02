@@ -111,6 +111,14 @@ body {
   font-size: 16px;
   font-weight: 400;
 }
+.wrap .registraion .nameCon {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .registraion .nameCon .input_con input {
+  width: 210px;
+}
 .wrap .registraion .input_con {
   display: flex;
   flex-direction: column;
@@ -121,7 +129,7 @@ body {
   font-weight: 300;
 }
 .wrap .registraion .input_con input {
-  width: 440px;
+  width: 100%;
   height: 50px;
   background-color: #fff;
   border-radius: 16px;

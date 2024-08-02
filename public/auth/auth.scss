@@ -101,6 +101,17 @@ body{
             font-size: 16px;
             font-weight: 400;
         }
+        .nameCon{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .input_con{
+                input{
+                    width: 210px;
+                }
+            }
+
+        }
         .input_con{
             display: flex;
             flex-direction: column;
@@ -110,7 +121,7 @@ body{
                 font-weight: 300;
             }
             input{
-                width: 440px;
+                width: 100%;
                 height: 50px;
                 background-color: #fff;
                 border-radius: 16px;
