@@ -1,3 +1,4 @@
+//navigation and pages changing
 function getQueryParams() {
     const params = {};
     window.location.search.substring(1).split('&').forEach(function(param) {
@@ -6,12 +7,13 @@ function getQueryParams() {
     });
     return params;
 }
-
 const params = getQueryParams();
 const action = params['action'];
-
 if (action === 'login') {
     $('.logIn').css('display', 'flex');
 } else if (action === 'register') {
     $('.registraion').css('display', 'flex');
 }
+$('.backArrow').click(()=>{
+    window.location.href = '/';
+})
