@@ -17,3 +17,11 @@ if (action === 'login') {
 $('.backArrow').click(()=>{
     window.location.href = '/';
 })
+$('#noAccount').click(()=>{
+    $('.logIn').css('display', 'none');
+    $('.registraion').css('display', 'flex');
+})
+$('#HaveAnAccount').click(()=>{
+    $('.registraion').css('display', 'none');
+    $('.logIn').css('display', 'flex');
+})
