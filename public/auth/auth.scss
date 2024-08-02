@@ -65,7 +65,7 @@ body{
             margin-top: 10px;
         }
         #logIn{
-            font-size: 36px;
+            font-size: 32px;
             font-weight: 600;
             display: flex;
             justify-content: center;
@@ -79,6 +79,7 @@ body{
             border: none;
             outline: none;
             box-shadow: #372554 4px 4px 5px;
+            cursor: pointer;
         }
         #noAccount{
             margin-top: 15px;
@@ -86,12 +87,12 @@ body{
     }
     .registraion{
         width: 490px;
-        height: 643px;
+        height: 610px;
         border-radius: 16px;
         background-color: #52528C;
         padding: 20px;
         color: #fff;
-        display: flex;
+        display: none;
         flex-direction: column;
         h3{
             font-size: 40px;
@@ -150,9 +151,14 @@ body{
                 }
             }
         }
-
-        #logIn{
-            font-size: 36px;
+        .passwordCheck{
+            width: 100%;
+            font-size: 13px;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+        #registraion{
+            font-size: 32px;
             font-weight: 600;
             display: flex;
             justify-content: center;
@@ -166,8 +172,9 @@ body{
             border: none;
             outline: none;
             box-shadow: #372554 4px 4px 5px;
+            cursor: pointer;
         }
-        #noAccount{
+        #HaveAnAccount{
             margin-top: 15px;
         }
     }
