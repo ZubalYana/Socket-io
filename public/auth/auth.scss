@@ -91,6 +91,12 @@ body{
         }
         #noAccount{
             margin-top: 15px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+        #noAccount:hover{
+            color: #ccc;
+            font-weight: 400;
         }
     }
     .registraion{
@@ -184,6 +190,12 @@ body{
         }
         #HaveAnAccount{
             margin-top: 15px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+        #HaveAnAccount:hover{
+            color: #ccc;
+            font-weight: 400;
         }
     }
 }

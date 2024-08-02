@@ -101,6 +101,12 @@ body {
 }
 .wrap .logIn #noAccount {
   margin-top: 15px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.wrap .logIn #noAccount:hover {
+  color: #ccc;
+  font-weight: 400;
 }
 .wrap .registraion {
   width: 490px;
@@ -190,4 +196,10 @@ body {
 }
 .wrap .registraion #HaveAnAccount {
   margin-top: 15px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.wrap .registraion #HaveAnAccount:hover {
+  color: #ccc;
+  font-weight: 400;
 }/*# sourceMappingURL=auth.css.map */
