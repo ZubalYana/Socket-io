@@ -23,6 +23,14 @@ body{
     p, span, button, div{
         font-family: Fredoka;
     }
+    .backArrow{
+        font-size: 42px;
+        color: #52528C;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        cursor: pointer;
+    }
     .logIn{
         width: 490px;
         height: 400px;
