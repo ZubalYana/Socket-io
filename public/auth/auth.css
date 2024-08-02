@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  background-color: #45474B;
+  color: #fff;
+}
+
+::selection {
+  background-color: #45474B;
+  color: #fff;
+}
+
+body {
+  overflow: hidden;
+}
+
+.wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.wrap h1, .wrap h2, .wrap h3, .wrap h4, .wrap h5, .wrap h6 {
+  font-family: Ballo 2;
+}
+.wrap p, .wrap span, .wrap button, .wrap div {
+  font-family: Fredoka;
+}/*# sourceMappingURL=auth.css.map */
