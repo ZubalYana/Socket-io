@@ -26,3 +26,16 @@ $('#registraionCart').click(function() {
 
 })
 
+//registraion
+$('#registraion').click(async function () {
+    const firstname = $('#reg_name').val();
+    const lastname = $('#reg_lastName').val();
+    const email = $('#reg_email').val();
+    const password = $('#reg_password').val();
+    try {
+        const response = await axios.post('/auth/register', { firstname, lastname, email, password });
+        alert(response.data.message);
+    } catch (error) {
+        alert(error.response.data.message);
+    }
+});
