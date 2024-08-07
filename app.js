@@ -18,8 +18,26 @@ const userSchema = new mongoose.Schema({
     username: { type: String, required: true, unique: true },
     password: { type: String, required: true }
 });
-
 const User = mongoose.model('User', userSchema);
+
+//user registration
+app.post('/auth/register', async (req, res) => {
+    const { firstname, lastname, password, email } = req.body;
+    if (!firstname || !lastname || !password || !email )  {
+        return res.status(400).json({ message: 'Username and password are required' });
+    }
+
+    const hashedPassword = await bcrypt.hash(password, 10);
+    const user = new User({ username, password: hashedPassword });
+
+    try {
+        await user.save();
+        res.status(201).json({ message: 'User created successfully' });
+    } catch (error) {
+        res.status(400).json({ message: 'User already exists' });
+    }
+});
+
 
 app.get('/auth', (req,res)=>{
     res.sendFile(path.join(__dirname, 'public', 'auth', 'auth.html'))
