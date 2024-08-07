@@ -2,11 +2,12 @@
 $('.backArrow').click(()=>{
     $('.registrationContainer').css('display', 'none');
     $('.logInContainer').css('display', 'none');
+    $('.greeting').css('display', 'flex');
 
 })
 $('#noAccount').click(()=>{
-    $('.logIn').css('display', 'none');
-    $('.registraion').css('display', 'flex');
+    $('.logInContainer').css('display', 'none');
+    $('.registrationContainer').css('display', 'flex');
 })
 $('#HaveAnAccount').click(()=>{
     $('.registrationContainer').css('display', 'none');
