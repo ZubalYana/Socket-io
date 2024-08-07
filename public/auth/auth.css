@@ -231,6 +231,9 @@ body {
   border: none;
   outline: none;
   margin-top: 2px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
 }
 .wrap .logInContainer .logIn #forgotData {
   font-size: 13px;
@@ -317,6 +320,9 @@ body {
   border: none;
   outline: none;
   margin-top: 2px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
 }
 .wrap .registrationContainer .registraion .input_con .profile-picture label {
   cursor: pointer;
