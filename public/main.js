@@ -25,3 +25,4 @@ $('#logInCart').click(function() {
 $('#registraionCart').click(function() {
     window.location.href = '/auth?action=register';
 })
+
