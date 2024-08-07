@@ -18,11 +18,3 @@ socket.on('users', (count)=>{
     $('.usersOnline').html(`Users online: <span>${count}</span> `)
 })
 
-//pages navigation
-$('#logInCart').click(function() {
-    window.location.href = '/auth?action=login';
-});
-$('#registraionCart').click(function() {
-    window.location.href = '/auth?action=register';
-})
-

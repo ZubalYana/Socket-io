@@ -25,3 +25,16 @@ $('#HaveAnAccount').click(()=>{
     $('.registraion').css('display', 'none');
     $('.logIn').css('display', 'flex');
 })
+$('#logInCart').click(function() {
+    $('.registraion').css('display', 'none');
+    $('.logIn').css('display', 'flex');
+    $('.greeting').css('display', 'none');
+
+});
+$('#registraionCart').click(function() {
+    $('.logIn').css('display', 'none');
+    $('.registraion').css('display', 'flex');
+    $('.greeting').css('display', 'none');
+
+})
+
