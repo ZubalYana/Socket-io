@@ -170,171 +170,193 @@ body{
         left: 40px;
         cursor: pointer;
     }
-    .logIn{
-        width: 490px;
-        height: 400px;
-        border-radius: 16px;
-        background-color: #52528C;
-        padding: 20px;
-        color: #fff;
+    .logInContainer{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
         display: none;
-        flex-direction: column;
-        h3{
-            font-size: 40px;
-            font-weight: 600;
-        }
-        p{
-            font-size: 16px;
-            font-weight: 400;
-        }
-        .input_con{
+        justify-content: center;
+        align-items: center;
+        .logIn{
+            width: 490px;
+            height: 400px;
+            border-radius: 16px;
+            background-color: #52528C;
+            padding: 20px;
+            color: #fff;
             display: flex;
             flex-direction: column;
-            margin-top: 7px;
-            label{
-                font-size: 13px;
-                font-weight: 300;
+            h3{
+                font-size: 40px;
+                font-weight: 600;
             }
-            input{
-                width: 440px;
-                height: 50px;
-                background-color: #fff;
-                border-radius: 16px;
-                box-shadow: #372554 4px 4px 5px;
-                border: none;
-                outline: none;
-                margin-top: 2px;
+            p{
+                font-size: 16px;
+                font-weight: 400;
             }
-        }
-        #forgotData{
-            font-size: 13px;
-            font-weight: 400px;
-            margin-top: 10px;
-        }
-        #logIn{
-            font-size: 32px;
-            font-weight: 600;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 200px;
-            height: 64px;
-            background-color: #fff;
-            border-radius: 16px;
-            color: #52528C;
-            margin-top: 20px;
-            border: none;
-            outline: none;
-            box-shadow: #372554 4px 4px 5px;
-            cursor: pointer;
-        }
-        #noAccount{
-            margin-top: 15px;
-            cursor: pointer;
-            transition: 0.3s ease-in-out;
-        }
-        #noAccount:hover{
-            color: #ccc;
-            font-weight: 400;
-        }
-    }
-    .registraion{
-        width: 490px;
-        height: 610px;
-        border-radius: 16px;
-        background-color: #52528C;
-        padding: 20px;
-        color: #fff;
-        display: none;
-        flex-direction: column;
-        h3{
-            font-size: 40px;
-            font-weight: 600;
-        }
-        p{
-            font-size: 16px;
-            font-weight: 400;
-        }
-        .nameCon{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
             .input_con{
+                display: flex;
+                flex-direction: column;
+                margin-top: 7px;
+                label{
+                    font-size: 13px;
+                    font-weight: 300;
+                }
                 input{
-                    width: 210px;
+                    width: 440px;
+                    height: 50px;
+                    background-color: #fff;
+                    border-radius: 16px;
+                    box-shadow: #372554 4px 4px 5px;
+                    border: none;
+                    outline: none;
+                    margin-top: 2px;
                 }
             }
-
-        }
-        .input_con{
-            display: flex;
-            flex-direction: column;
-            margin-top: 7px;
-            label{
+            #forgotData{
                 font-size: 13px;
-                font-weight: 300;
+                font-weight: 400px;
+                margin-top: 10px;
             }
-            input{
-                width: 100%;
-                height: 50px;
+            #logIn{
+                font-size: 32px;
+                font-weight: 600;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                height: 64px;
                 background-color: #fff;
                 border-radius: 16px;
-                box-shadow: #372554 4px 4px 5px;
+                color: #52528C;
+                margin-top: 20px;
                 border: none;
                 outline: none;
-                margin-top: 2px;
+                box-shadow: #372554 4px 4px 5px;
+                cursor: pointer;
             }
-            .profile-picture {    
-                label {
-                    cursor: pointer;
-                    display: block;
-                    width: 100px; 
-                    height: 100px; 
-                    border-radius: 50%;
-                    overflow: hidden;    
-                    margin-top: 5px;    
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
+            #noAccount{
+                margin-top: 15px;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+            }
+            #noAccount:hover{
+                color: #ccc;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .registrationContainer{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        .registraion{
+            width: 490px;
+            height: 610px;
+            border-radius: 16px;
+            background-color: #52528C;
+            padding: 20px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            h3{
+                font-size: 40px;
+                font-weight: 600;
+            }
+            p{
+                font-size: 16px;
+                font-weight: 400;
+            }
+            .nameCon{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .input_con{
+                    input{
+                        width: 210px;
                     }
                 }
-                input[type="file"] {
-                    display: none;
+    
+            }
+            .input_con{
+                display: flex;
+                flex-direction: column;
+                margin-top: 7px;
+                label{
+                    font-size: 13px;
+                    font-weight: 300;
+                }
+                input{
+                    width: 100%;
+                    height: 50px;
+                    background-color: #fff;
+                    border-radius: 16px;
+                    box-shadow: #372554 4px 4px 5px;
+                    border: none;
+                    outline: none;
+                    margin-top: 2px;
+                }
+                .profile-picture {    
+                    label {
+                        cursor: pointer;
+                        display: block;
+                        width: 100px; 
+                        height: 100px; 
+                        border-radius: 50%;
+                        overflow: hidden;    
+                        margin-top: 5px;    
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    input[type="file"] {
+                        display: none;
+                    }
                 }
             }
-        }
-        .passwordCheck{
-            width: 100%;
-            font-size: 13px;
-            font-weight: 400;
-            margin-top: 10px;
-        }
-        #registraion{
-            font-size: 32px;
-            font-weight: 600;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 200px;
-            height: 64px;
-            background-color: #fff;
-            border-radius: 16px;
-            color: #52528C;
-            margin-top: 20px;
-            border: none;
-            outline: none;
-            box-shadow: #372554 4px 4px 5px;
-            cursor: pointer;
-        }
-        #HaveAnAccount{
-            margin-top: 15px;
-            cursor: pointer;
-            transition: 0.3s ease-in-out;
-        }
-        #HaveAnAccount:hover{
-            color: #ccc;
-            font-weight: 400;
+            .passwordCheck{
+                width: 100%;
+                font-size: 13px;
+                font-weight: 400;
+                margin-top: 10px;
+            }
+            #registraion{
+                font-size: 32px;
+                font-weight: 600;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                height: 64px;
+                background-color: #fff;
+                border-radius: 16px;
+                color: #52528C;
+                margin-top: 20px;
+                border: none;
+                outline: none;
+                box-shadow: #372554 4px 4px 5px;
+                cursor: pointer;
+            }
+            #HaveAnAccount{
+                margin-top: 15px;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+            }
+            #HaveAnAccount:hover{
+                color: #ccc;
+                font-weight: 400;
+            }
         }
     }
+
 }

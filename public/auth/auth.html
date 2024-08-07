@@ -39,67 +39,77 @@
             </div>
 
         </div>
-        <!-- <i class="fa-solid fa-angle-left backArrow"></i> -->
-        <div class="logIn">
-            <h3>Login</h3>
-            <p>Let’s continue our journey!</p>
-            <form id="loginForm">
-                <div class="input_con">
-                    <label for="logIn_email">Email</label>
-                    <input type="text" id="logIn_email">
-                </div>
-                <div class="input_con">
-                    <label for="logIn_email">Password</label>
-                    <input type="text" id="logIn_password">
-                </div>
-                <p id="forgotData">Forgot email or password?</p>
-                <button type="submit" id="logIn">Log in</button>
-                <p id="noAccount">Don’t have an account? Register here!</p>
-            </form>
-        </div>
-        <div class="registraion">
-            <h3>Registration</h3>
-            <p>Complete a simple registration to continue!</p>
-            <form id="registraionForm">
-                <div class="input_con">
+        <div class="logInContainer">
+            <i class="fa-solid fa-angle-left backArrow"></i>
 
-                <label for="profile-pic" id="imgLabel">Profile picture</label>
-                <div class="profile-picture">
-                    <label for="profile-pic">
-                        <img src="./materials/default profile img.png" alt="" id="profile-pic-preview">
-                    </label>
-                    <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
-                </div>
+            <div class="logIn">
+                <h3>Login</h3>
+                <p>Let’s continue our journey!</p>
+                <form id="loginForm">
+                    <div class="input_con">
+                        <label for="logIn_email">Email</label>
+                        <input type="text" id="logIn_email">
+                    </div>
+                    <div class="input_con">
+                        <label for="logIn_email">Password</label>
+                        <input type="text" id="logIn_password">
+                    </div>
+                    <p id="forgotData">Forgot email or password?</p>
+                    <button type="submit" id="logIn">Log in</button>
+                    <p id="noAccount">Don’t have an account? Register here!</p>
+                </form>
             </div>
-                <div class="nameCon">
-                    <div class="input_con">
-                        <label for="reg_name">Name*</label>
-                        <input type="text" id="reg_name" required>
-                    </div>
-                    <div class="input_con">
-                        <label for="reg_lastName">Last name</label>
-                        <input type="text" id="reg_lastName">
-                    </div>
-                </div>
-                <div class="input_con">
-                    <label for="reg_email">Email*</label>
-                    <input type="text" id="reg_email" required>
-                </div>
-                <div class="input_con">
-                    <label for="reg_email">Password*</label>
-                    <input type="text" id="reg_password" required>
-                </div>
-                <p class="passwordCheck">
-                    *<span>8-12 symbols</span>
-                    <span>numbers</span>
-                    <span>big letters</span>
-                    <span>small letters</span>
-                    <span>special symbols</span>*
-                </p>
-                <button type="submit" id="registraion">Sign up</button>
-                <p id="HaveAnAccount">Already have an account? Log in here!</p>
-            </form>
         </div>
+        <div class="registrationContainer">
+            <i class="fa-solid fa-angle-left backArrow"></i>
+
+            <div class="registraion">
+                <h3>Registration</h3>
+                <p>Complete a simple registration to continue!</p>
+                <form id="registraionForm">
+                    <div class="input_con">
+    
+                    <label for="profile-pic" id="imgLabel">Profile picture</label>
+                    <div class="profile-picture">
+                        <label for="profile-pic">
+                            <img src="./materials/default profile img.png" alt="" id="profile-pic-preview">
+                        </label>
+                        <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+                    </div>
+                </div>
+                    <div class="nameCon">
+                        <div class="input_con">
+                            <label for="reg_name">Name*</label>
+                            <input type="text" id="reg_name" required>
+                        </div>
+                        <div class="input_con">
+                            <label for="reg_lastName">Last name</label>
+                            <input type="text" id="reg_lastName">
+                        </div>
+                    </div>
+                    <div class="input_con">
+                        <label for="reg_email">Email*</label>
+                        <input type="text" id="reg_email" required>
+                    </div>
+                    <div class="input_con">
+                        <label for="reg_email">Password*</label>
+                        <input type="text" id="reg_password" required>
+                    </div>
+                    <p class="passwordCheck">
+                        *<span>8-12 symbols</span>
+                        <span>numbers</span>
+                        <span>big letters</span>
+                        <span>small letters</span>
+                        <span>special symbols</span>*
+                    </p>
+                    <button type="submit" id="registraion">Sign up</button>
+                    <p id="HaveAnAccount">Already have an account? Log in here!</p>
+                </form>
+            </div>
+        </div>
+
+
+
     </div>
     <script src="./auth.js"></script>
 </body>
