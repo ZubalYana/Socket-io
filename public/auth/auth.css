@@ -32,6 +32,151 @@ body {
 .wrap p, .wrap span, .wrap button, .wrap div {
   font-family: Fredoka;
 }
+.wrap .screen {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+}
+.wrap .loading {
+  position: absolute;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  animation: loadingClose 1s 1 linear forwards;
+  animation-delay: 5s;
+}
+.wrap .loading .circle {
+  position: relative;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.wrap .loading .circle .wave {
+  position: absolute;
+  width: 1000px;
+}
+.wrap .loading .circle .wave1 {
+  animation: wave1 6s 1 linear forwards;
+  top: 330px;
+  z-index: 2;
+}
+.wrap .loading .circle .wave2 {
+  animation: wave2 5.7s 1 linear forwards;
+  left: -650px;
+  top: 300px;
+  z-index: 1;
+}
+@keyframes wave1 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-60%);
+    top: -100px;
+  }
+}
+@keyframes wave2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(80%);
+    top: -200px;
+  }
+}
+.wrap .loading .curtains {
+  width: 0px;
+  height: 100vh;
+  background: linear-gradient(to bottom, #372554, #52528C);
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: curtains 1s 1 linear forwards;
+  animation-delay: 4.5s;
+  z-index: 5;
+}
+@keyframes curtains {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes loadingClose {
+  0% {
+    display: flex;
+  }
+  100% {
+    display: none;
+  }
+}
+.wrap .greeting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.wrap .greeting .textCon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.wrap .greeting .textCon h1 {
+  color: #52528C;
+  font-size: 76px;
+  font-weight: 900;
+}
+.wrap .greeting .textCon p {
+  color: #372554;
+  font-size: 20px;
+  font-weight: 300;
+  width: 848px;
+}
+.wrap .greeting .authCon {
+  width: 900px;
+  height: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.wrap .greeting .authCon .cart {
+  width: 350px;
+  height: 400px;
+  border-radius: 16px;
+  border: #372554 2px solid;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #372554;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.wrap .greeting .authCon .cart img {
+  width: 170px;
+  margin-bottom: 20px;
+}
+.wrap .greeting .authCon .cart h3 {
+  font-size: 42px;
+  font-weight: 700;
+}
+.wrap .greeting .authCon .cart p {
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  width: 300px;
+  margin-top: 10px;
+}
+.wrap .greeting .authCon .cart:hover {
+  box-shadow: #52528C 0 0 10px 5px;
+}
 .wrap .backArrow {
   font-size: 42px;
   color: #52528C;
